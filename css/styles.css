@@ -19,19 +19,19 @@
 }
 
 body {
-    background-color: var(--very-dark-blue);
     max-width: 1440px;
     min-width: 375px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: var(--very-dark-blue);
+    
 }
 
 .container {
     width: 350px;
-    margin: auto;
-    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 88px auto;
 }
 
 .card {
@@ -100,10 +100,13 @@ body {
 .image-box {
     grid-area: image;
     position: relative;
+    background-color: var(--soft-violet);
 }
 .image-box img {
     width: 100%;
     height: 100%;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
 }
 .overlay {
     width: 100%;
@@ -130,6 +133,7 @@ body {
     .container {
         width: 1110px;
         padding: 0px;
+        margin: 0 auto;
     }
     .card{
         height: 446px;
